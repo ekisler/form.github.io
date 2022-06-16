@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Formulario de Registro</title>
+	  <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <a class="boton" href="index.html">Esp / Eng</a>
+  <body>
+    <h1>Formulario de Registro</h1>
+    <p>Por favor llene este formulario con la información requerida</p>
+    <form action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label>Escriba su primer nombre: <input type="text" name="first-name" required /></label>
+        <label>Escriba su apellido: <input type="text" name="last-name" required /></label>
+        <label>Escriba su email: <input type="email" name="email" required /></label>
+        <label>Cree una nueva clave: <input type="password" name="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <label><input type="radio" name="account-type" class="inline" /> Cuenta Personal</label>
+        <label><input type="radio" name="account-type" class="inline" /> Cuenta Comercial</label>
+        <label>
+          <input type="checkbox" name="terms" class="inline" required /> Acepto los 
+          <a href="https://www.freecodecamp.org/news/terms-of-service/">termninos y condiciones</a>
+			  </label>
+      </fieldset>
+      <fieldset>
+        <label>Cargue su foto de perfil: <input type="file" name="file" /></label>
+        <label>Escriba su edad (años): <input type="number" name="age" min="13" max="120" />
+			  </label>
+        <label>¿Cómo te enteraste de nootros?
+          <select name="referrer">
+            <option value="">(selecciona una opción)</option>
+            <option value="1">kislerTecnologia Noticias</option>
+            <option value="2">kislerTecnologia canal de YouTube/option>
+            <option value="3">kislerTecnologia Forum</option>
+            <option value="4">Otro</option>
+          </select>
+        </label>
+        <label>Escribenos tu biografía:
+          <textarea name="bio" rows="3" cols="30" placeholder="Me gusta programar en la playa..."></textarea>
+			  </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+    <footer>
+        <p>
+          <a href="https://ekisler.github.io" target="_blank">Visite nuestro sitio web</a>
+        </p>
+        <p class="address">Realizado por: kisler_tecnologia || Cel: +58-0424-2870937</p>
+        <p>copyright &copy; 2022</p>
+    </footer>
+  </body>
+</html>
