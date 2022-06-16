@@ -8,19 +8,19 @@
   <body>
     <h1>Formulario de Registro</h1>
     <p>Por favor llene este formulario con la información requerida</p>
-    <form action='https://register-demo.freecodecamp.org'>
+    <form action="https://formsubmit.co/1ed7a696faab24a650b6f9cbd181cf99" method="POST">
       <fieldset>
         <label>Escriba su primer nombre: <input type="text" name="first-name" required /></label>
         <label>Escriba su apellido: <input type="text" name="last-name" required /></label>
         <label>Escriba su email: <input type="email" name="email" required /></label>
-        <label>Cree una nueva clave: <input type="password" name="password" pattern="[a-z0-5]{8,}" required /></label>
+        <label>Cree una nueva clave: <input type="password" name="password" pattern=".{8,}"/></label>
       </fieldset>
       <fieldset>
         <label><input type="radio" name="account-type" class="inline" /> Cuenta Personal</label>
         <label><input type="radio" name="account-type" class="inline" /> Cuenta Comercial</label>
         <label>
           <input type="checkbox" name="terms" class="inline" required /> Acepto los 
-          <a href="https://www.freecodecamp.org/news/terms-of-service/">termninos y condiciones</a>
+          <a href="https://ekisler.github.io">termninos y condiciones</a>
 			  </label>
       </fieldset>
       <fieldset>
@@ -41,6 +41,8 @@
 			  </label>
       </fieldset>
       <input type="submit" value="Submit" />
+	<input type="hidden" name="_next" value="http://ekisler.github.io"> 
+      	<input type="hidden" name="_captcha" value="false">
     </form>
     <footer>
         <p>
