@@ -3,6 +3,6 @@
 
 ## Formulario de Registro
 
-[Screenshot](./assets/logoEk.jpg)
+![Screenshot](./assets/logoEk.jpg)
 
-[Screenshot](./assets/registerForm.png)
+![Screenshot](./assets/registerForm.png)
