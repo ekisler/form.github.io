@@ -5,4 +5,4 @@
 
 [Screenshot](./assets/logoEk.jpg)
 
-[screenshot](./assets/registerForm.png)
+[Screenshot](./assets/registerForm.png)
