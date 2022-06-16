@@ -8,18 +8,18 @@
   <body>
     <h1>Registration Form</h1>
     <p>Please fill out this form with the required information</p>
-    <form action='https://register-demo.freecodecamp.org'>
+    <form action="https://formsubmit.co/1ed7a696faab24a650b6f9cbd181cf99" method="POST">
       <fieldset>
         <label>Enter Your First Name: <input type="text" name="first-name" required /></label>
         <label>Enter Your Last Name: <input type="text" name="last-name" required /></label>
         <label>Enter Your Email: <input type="email" name="email" required /></label>
-        <label>Create a New Password: <input type="password" name="password" pattern="[a-z0-5]{8,}" required /></label>
+        <label>Create a New Password: <input type="password" name="password" pattern=".{8,}" required /></label>
       </fieldset>
       <fieldset>
         <label><input type="radio" name="account-type" class="inline" /> Personal Account</label>
         <label><input type="radio" name="account-type" class="inline" /> Business Account</label>
         <label>
-          <input type="checkbox" name="terms" class="inline" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+          <input type="checkbox" name="terms" class="inline" required /> I accept the <a href="https://ekisler.github.io">terms and conditions</a>
 			  </label>
       </fieldset>
       <fieldset>
@@ -40,6 +40,8 @@
 			  </label>
       </fieldset>
       <input type="submit" value="Submit" />
+      <input type="hidden" name="_next" value="http://ekisler.github.io"> 
+      <input type="hidden" name="_captcha" value="false">
     </form>
     <footer>
       <p>
